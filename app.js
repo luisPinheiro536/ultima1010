@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-
+const user = require("./users");
 const users = require("./users");
 
 app.get("/", (_, res) => res.send("Ok"));
